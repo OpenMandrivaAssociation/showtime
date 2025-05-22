@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 Name:           showtime
 Version:        48.1
 Release:        1
