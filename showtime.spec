@@ -17,8 +17,12 @@ BuildRequires:  pkgconfig(gnome-desktop-4)
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:  desktop-file-utils
+BuildRequires:  appstream
 BuildRequires:  appstream-util
+BuildRequires:  python-gi
+BuildRequires:  python-gobject3
 
+Requires:       python-gi
 Requires:       gtk4
 Requires:       libadwaita-common
 Requires:       python3
