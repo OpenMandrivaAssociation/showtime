@@ -65,3 +65,4 @@ need for a straightforward viewing experience.
 %{_datadir}/icons/hicolor/symbolic/apps/org.gnome.Showtime-symbolic.svg
 %{_metainfodir}/org.gnome.Showtime.metainfo.xml
 %{_datadir}/showtime/
+%{_datadir}/dbus-1/services/org.gnome.Showtime.service
