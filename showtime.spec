@@ -1,6 +1,6 @@
 %undefine _debugsource_packages
 Name:           showtime
-Version:        49.0
+Version:        49.1
 Release:        1
 Summary:        Modern video player built using GTK4
 Group:		      Video
