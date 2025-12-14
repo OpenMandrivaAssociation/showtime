@@ -1,6 +1,6 @@
 %undefine _debugsource_packages
 Name:           showtime
-Version:        48.1
+Version:        49.1
 Release:        1
 Summary:        Modern video player built using GTK4
 Group:		      Video
@@ -65,3 +65,4 @@ need for a straightforward viewing experience.
 %{_datadir}/icons/hicolor/symbolic/apps/org.gnome.Showtime-symbolic.svg
 %{_metainfodir}/org.gnome.Showtime.metainfo.xml
 %{_datadir}/showtime/
+%{_datadir}/dbus-1/services/org.gnome.Showtime.service
