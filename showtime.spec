@@ -20,6 +20,10 @@ BuildRequires:  pkgconfig(libadwaita-1)
 # blueprint-compiler loads typelibs, which the pkgconfig packages do not pull in.
 BuildRequires:  typelib(Gtk) = 4.0
 BuildRequires:  typelib(Adw) = 1
+# gobject-introspection provides typelib(cairo) and typelib(freetype2) without
+# shipping the files. Loading Gtk 4 needs those typelibs.
+BuildRequires:  lib64cairo-gir1.0
+BuildRequires:  lib64freetype-gir2.0
 BuildRequires:  desktop-file-utils
 BuildRequires:  appstream
 BuildRequires:  appstream-util
