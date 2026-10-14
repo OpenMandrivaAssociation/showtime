@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 Name:           showtime
 Version:        50.0
-Release:        1
+Release:        2
 Summary:        Modern video player built using GTK4
 Group:		      Video
 License:        GPL-3.0-or-later
@@ -12,7 +12,7 @@ Source0:        https://download.gnome.org/sources/%{name}/48/%{name}-%{version}
 BuildRequires:  gettext
 BuildRequires:  meson
 BuildRequires:  pkgconfig(blueprint-compiler)
-BuildRequires:  pkgconfig(python)
+BuildRequires:  pkgconfig(python3)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gnome-desktop-4)
 BuildRequires:  pkgconfig(gtk4)
@@ -26,7 +26,7 @@ BuildRequires:  python-gobject3
 Requires:       python-gi
 Requires:       gtk4
 Requires:       libadwaita-common
-Requires:       python3
+Requires:       python
 Requires:       hicolor-icon-theme
 Requires:       gstreamer1.0-plugins-base
 Requires:       gstreamer-plugins-rs
