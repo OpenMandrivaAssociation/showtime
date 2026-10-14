@@ -17,6 +17,9 @@ BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gnome-desktop-4)
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1)
+# blueprint-compiler loads typelibs, which the pkgconfig packages do not pull in.
+BuildRequires:  typelib(Gtk) = 4.0
+BuildRequires:  typelib(Adw) = 1
 BuildRequires:  desktop-file-utils
 BuildRequires:  appstream
 BuildRequires:  appstream-util
