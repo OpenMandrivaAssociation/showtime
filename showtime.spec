@@ -1,13 +1,15 @@
 %undefine _debugsource_packages
+%define url_ver %(echo %{version}|cut -d. -f1,2)
+
 Name:           showtime
 Version:        50.0
-Release:        2
+Release:        3
 Summary:        Modern video player built using GTK4
 Group:		      Video
 License:        GPL-3.0-or-later
 URL:            https://apps.gnome.org/Showtime/
 
-Source0:        https://download.gnome.org/sources/%{name}/48/%{name}-%{version}.tar.xz
+Source0:        https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:  gettext
 BuildRequires:  meson
@@ -22,8 +24,8 @@ BuildRequires:  typelib(Gtk) = 4.0
 BuildRequires:  typelib(Adw) = 1
 # gobject-introspection provides typelib(cairo) and typelib(freetype2) without
 # shipping the files. Loading Gtk 4 needs those typelibs.
-BuildRequires:  lib64cairo-gir1.0
-BuildRequires:  lib64freetype-gir2.0
+BuildRequires:  %{_lib}cairo-gir1.0
+BuildRequires:  %{_lib}freetype-gir2.0
 BuildRequires:  desktop-file-utils
 BuildRequires:  appstream
 BuildRequires:  appstream-util
