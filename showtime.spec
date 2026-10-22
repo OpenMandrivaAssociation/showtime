@@ -3,7 +3,7 @@
 
 Name:           showtime
 Version:        50.0
-Release:        3
+Release:        4
 Summary:        Modern video player built using GTK4
 Group:		      Video
 License:        GPL-3.0-or-later
